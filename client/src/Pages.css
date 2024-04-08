@@ -1,0 +1,90 @@
+/* body{
+  background-color: black;
+} */
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-form {
+    width: 40%;
+    padding: 50px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    margin-block: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+  }
+  
+  input[type='email'],
+  input[type='password'] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-block: 10px;
+  }
+  
+  button {
+    /* font-size: 2rem; */
+    width: 100%;
+    background-color: #ff4d30;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  button:hover{
+    box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.5);
+    background-color: #fa4226;
+  }
+  
+  
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .signup-form {
+    width: 500px;
+    padding: 30px;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px; */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type='text'],
+  input[type='email'],
+  input[type='password'] {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  
