@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@instructure/ui-badge": "^8.53.1",
+    "@stripe/stripe-js": "^3.3.0",
     "@tabler/icons-react": "^2.33.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
