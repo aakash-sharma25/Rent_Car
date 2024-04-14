@@ -42,7 +42,7 @@ function CarBox({ data, carID }) {
                 <span>{car.doors}</span>
               </div>
 
-              <div className="pick-description__table__col">
+              <div className="pick-description__table__col">  
                 <span>AC</span>
                 <span>{car.air}</span>
               </div>

@@ -84,12 +84,12 @@ exports.registerControllerV2 = async (req, res) => {
     console.log(cldRes.secure_url);
 
     const hassedpassword = await bcrypt.hash(password, 10);
-    // password=hassedpassword;
     const user = await new usermodel({
       username: name,
       email,
       password: hassedpassword,
       location,
+      identityProff: cldRes.secure_url,
     }).save();
     return res.status(200).json({
       sucess: true,
