@@ -1,11 +1,12 @@
 {
   "name": "car-rental-main",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a car rental website project",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon serevr.js",
+    "start": "node app.js",
+    "server": "nodemon app.js",
     "client": "npm start --prefix ./client ",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
