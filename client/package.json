@@ -1,6 +1,7 @@
 {
   "name": "car-rental",
   "version": "0.1.0",
+  "proxy":"http://localhost:8080",
   "private": true,
   "dependencies": {
     "@instructure/ui-badge": "^8.53.1",

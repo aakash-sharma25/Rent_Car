@@ -86,7 +86,7 @@ export default function AllBookings() {
   const verifyBooking = async (id) => {
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/api/v1/auth/verifybooking",
+        "/api/v1/auth/verifybooking",
         {
           bookingId: id,
         }
@@ -99,7 +99,7 @@ export default function AllBookings() {
   const fetchBookings = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8080/api/v1/auth/allbooking"
+        "/api/v1/auth/allbooking"
       );
       setdata(data?.bookings);
     } catch (error) {

@@ -65,7 +65,7 @@ function BookCar() {
       "Content-Type": "application/json",
     };
     const { data } = await axios.post(
-      "http://localhost:8080/api/v1/car/handleCheckout",
+      "/api/v1/car/handleCheckout",
       body,
       {
         headers: headers,
@@ -105,7 +105,7 @@ function BookCar() {
       //   "Content-Type": "application/json",
       // };
       const { data } = await axios.post(
-        "http://localhost:8080/api/v1/car/bookCar",
+        "/api/v1/car/bookCar",
         postData
       );
       toast.success(data.message);
@@ -124,7 +124,7 @@ function BookCar() {
   const fetchSingleCar = async (e) => {
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/api/v1/car/getCarById",
+        "/api/v1/car/getCarById",
         {
           id: id,
         }

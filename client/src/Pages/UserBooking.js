@@ -63,7 +63,7 @@ export default function UserBooking() {
   const fetchUserBooking = async () => {
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/api/v1/auth/userbooking",
+        "/api/v1/auth/userbooking",
         {
           userId: auth?.user?._id,
         }

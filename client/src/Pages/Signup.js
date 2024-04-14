@@ -62,7 +62,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/v1/auth/registerV2",
+        "/api/v1/auth/registerV2",
         formToSend
       );
       // console.log(response);

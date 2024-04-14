@@ -21,12 +21,9 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // const formToSend = new FormData();
-    // formToSend.append("email",email);
-    // formToSend.append("password",password);
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/v1/auth/login",
+        "/api/v1/auth/login",
         {
           email,
           password,

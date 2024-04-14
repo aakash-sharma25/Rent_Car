@@ -11,7 +11,7 @@ export default function Notification() {
   const fetchAllNotifications = async () => {
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/api/v1/auth/allnotification",
+        "/api/v1/auth/allnotification",
         {
           userId: auth?.user?._id,
         }

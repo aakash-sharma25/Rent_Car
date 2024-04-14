@@ -13,7 +13,7 @@ function Models() {
 
   const fetchCarsByName = async () => {
     const { data } = await axios.post(
-      "http://localhost:8080/api/v1/car/getCarByName",
+      "/api/v1/car/getCarByName",
       { name: search }
     );
     if (data) {
@@ -23,7 +23,7 @@ function Models() {
   };
   const fetchAllCars = async () => {
     setsearch("");
-    const { data } = await axios.get("http://localhost:8080/api/v1/car/allCar");
+    const { data } = await axios.get("/api/v1/car/allCar");
     if (data) {
       data.cars.reverse();
       setcars(data?.cars);

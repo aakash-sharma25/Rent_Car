@@ -14,7 +14,7 @@ export default function ReviewBooking() {
   const fetchBookingDetails = async () => {
     setloading(true);
     const { data } = await axios.get(
-      `http://localhost:8080/api/v1/auth/get-booking-details/${id}`
+      `/api/v1/auth/get-booking-details/${id}`
     );
     console.log(data);
     setcar(data?.requestedCar);

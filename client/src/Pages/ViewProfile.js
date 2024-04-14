@@ -74,7 +74,7 @@ function ViewProfile() {
 
     try {
      
-      const { data } = await axios.post("http://localhost:8080/api/v1/car/addCar", formToSend);
+      const { data } = await axios.post("/api/v1/car/addCar", formToSend);
       if (data.success) {
         toast.success("Car added successfully");
         navigate("/models");
