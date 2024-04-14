@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.56672fcf.css",
+    "main.js": "/static/js/main.ebb93d00.js",
+    "static/media/heroes-bg.png": "/static/media/heroes-bg.71ab9a13d73de3860763.png",
+    "static/media/main.png": "/static/media/main.70cd75042bdf42515d92.png",
+    "static/media/pfp2.jpg": "/static/media/pfp2.fd9b1716200244ed8905.jpg",
+    "static/media/main-car.png": "/static/media/main-car.9b30faa59387879fa060.png",
+    "static/media/about-main.jpg": "/static/media/about-main.ed0137841dc67d61ec95.jpg",
+    "static/media/car.png": "/static/media/car.5e21eedbea3280311aff.png",
+    "static/media/bg02.png": "/static/media/bg02.3efbc4567749d0a5671e.png",
+    "static/media/hero-bg.png": "/static/media/hero-bg.3b5f7a2502f0f81d1490.png",
+    "static/media/bg.png": "/static/media/bg.82b3bf0dc76cd35f3da0.png",
+    "static/media/book-bg.png": "/static/media/book-bg.6f629a1041e9fd9c6685.png",
+    "static/media/book-banner.png": "/static/media/book-banner.09fcba44170a314c81a8.png",
+    "static/media/pfp1.jpg": "/static/media/pfp1.ba7974ae51bb5d44fa69.jpg",
+    "static/media/bg-contact.png": "/static/media/bg-contact.c178c6db0f988d408d94.png",
+    "index.html": "/index.html",
+    "main.56672fcf.css.map": "/static/css/main.56672fcf.css.map",
+    "main.ebb93d00.js.map": "/static/js/main.ebb93d00.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56672fcf.css",
+    "static/js/main.ebb93d00.js"
+  ]
+}
