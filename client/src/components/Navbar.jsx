@@ -12,7 +12,7 @@ function Navbar() {
   useState(() => {
     console.log(auth);
   });
- 
+
   const handleLogout = () => {
     setauth({
       ...auth,
@@ -50,25 +50,89 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link onClick={openNav} to="/models">
-                Models
-              </Link>
-            </li>
-            <li>
               <Link onClick={openNav} to="/testimonials">
                 Testimonials
               </Link>
             </li>
-            {/* <li>
-              <Link onClick={openNav} to="/team">
-                Our Team
-              </Link>
-            </li> */}
             <li>
               <Link onClick={openNav} to="/contact">
                 Contact
               </Link>
             </li>
+            {auth?.user ? (
+              <>
+                <li>
+                  {" "}
+                  <Link onClick={openNav} className="models-link" to="/models">
+                    Vehicle Models
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    onClick={openNav}
+                    className="team-link"
+                    to="/notification"
+                  >
+                    Notification
+                  </Link>
+                </li>
+              </>
+            ) : null}
+            {auth?.user?.isAdmin === "true" ? (
+              <>
+                <li>
+                  <Link className="models-link" to="/add-vehicle">
+                    Add Vehicle
+                  </Link>
+                </li>
+                <li>
+                  <Link className="models-link" to="/admin-allbooking">
+                    All Booking
+                  </Link>
+                </li>
+              </>
+            ) : null}
+            {auth?.user?.isAdmin === "false" ? (
+              <>
+                <li>
+                  <Link
+                    onClick={openNav}
+                    className="models-link"
+                    to="/userbooking"
+                  >
+                    My Bookings
+                  </Link>
+                </li>
+              </>
+            ) : null}
+            {!auth?.user ? (
+              <>
+                <Link
+                  onClick={openNav}
+                  className="navbar__buttons__sign-in"
+                  to="/login"
+                >
+                  Login
+                </Link>
+                <Link
+                  onClick={openNav}
+                  className="navbar__buttons__register"
+                  to="/signup"
+                >
+                  Sign up
+                </Link>
+              </>
+            ) : (
+              <Link
+                onClick={() => {
+                  openNav();
+                  handleLogout();
+                }}
+                className="navbar__buttons__register"
+              >
+                Logout
+              </Link>
+            )}
           </ul>
         </div>
 
